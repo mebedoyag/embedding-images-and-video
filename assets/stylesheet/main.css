@@ -49,6 +49,108 @@ table {
 
 /*
   ========================================
+  Grid
+  ========================================
+*/
+
+*::before, *::after, * {
+  box-sizing: border-box;
+}
+
+.container {
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+.wrapper {
+  flex-basis: 66.6%;
+}
+
+.sidebar {
+  flex-basis: calc(100% - 66.6%);
+}
+
+.header .search {
+  align-items: center;
+  display: flex;
+}
+
+.header .navigation ul {
+  display: flex;
+}
+
+.wrapper .main-video {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.main-video > * {
+  flex: 1 100%;
+}
+
+.main-video h3 {
+  order: 2;
+}
+
+.main-video h4 {
+  order: 3;
+}
+
+.main-video section {
+  display: flex;
+  flex-direction: row-reverse;
+  order: 4;
+}
+
+.wrapper .video-desc {
+  display: flex;
+}
+
+.video-desc .wrapper-desc {
+  order: 1;
+}
+
+.video-desc button {
+  order: 2;
+}
+
+.comments article {
+  display: flex;
+}
+
+.comments .round-photo {
+  flex: 1 0;
+} 
+
+.comments .wrapper-com {
+  flex: 20 0;
+}
+
+.comments section ul {
+  display: flex;
+}
+
+.sidebar article {
+  display: flex;
+}
+
+/* .comments article > * {
+  border: 1px solid red;
+}
+
+.comments {
+  border: 1px solid green;
+} */
+
+/*
+  ========================================
   Typography
   ========================================
 */
@@ -70,3 +172,25 @@ table {
   Images
   ========================================
 */
+
+.sidebar img {
+  height: 90px;
+  width: 160px;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.header {
+  margin: 10px 30px;
+  width: 50px;
+}
+
+.search input {
+  height: 40px;
+  line-height: 1;
+  width: 600px;
+}
